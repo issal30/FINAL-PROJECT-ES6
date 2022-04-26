@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <div class="nav-image" onclick="window.location.reload()">
+          <img src="logo-navbar.png" />
+        </div>
+        <div class="navigation">
+          <div class="navigation-contents">
+            <p>HOME</p>
+          </div>
+          <div class="navigation-contents">
+            <p>TUTORIAL</p>
+          </div>
+          <div class="navigation-contents">
+            <p>FAQ</p>
+          </div>
+          <div class="navigation-contents">
+            <p>IMPRINT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-content">
+      <div class="under-body">
+        <div class="kiri">
+          <img src="maskot.png" height="450" />
+        </div>
+        <div class="kanan">
+          <div style="display: flex; justify-content: center">
+            <p class="text">CONVERT YOUR IMAGES TO BASE64</p>
+          </div>
+
+          <div class="box" for="inputFileToLoad" ref="photo">
+            <input
+              id="inputFileToLoad"
+              type="file"
+              accept="image/*"
+              class="dropdown-image"
+            />
+            <div class="left-box">
+              <p>DRAG & DROP IMAGES ANYWHERE</p>
+            </div>
+            <div class="right-box">
+              <p>OR CLICK HERE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="loader"></span>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 50px">
+      <div class="footer">
+        <button
+          style="position: absolute; right: 20px; width: 70px; cursor: pointer"
+          onclick="copyText()"
+        >
+          Copy
+        </button>
+        <img id="imageTest" src="" style="width: 100%; height: auto" />
+      </div>
+    </div>
+    <script src="project.js"></script>
+  </body>
+</html>
